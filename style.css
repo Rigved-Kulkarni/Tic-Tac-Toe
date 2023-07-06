@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Inline+One&family=Baloo+Bhaina+2&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(31, 27, 27);
+    color: rgb(227, 209, 188);
+    height: 60px;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gameContainer {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(3, 9vw);
+    grid-template-rows: repeat(3, 9vw);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+.box {
+    border: 1px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(236, 224, 247);
+    cursor: pointer;
+}
+
+.gameInfo {
+    padding: 5px 30px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.imgbox img {
+    border-radius: 20px;
+    /* display: none; */
+    width: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: width 1s ease-out;
+}
+
+.imgbox2 img {
+    border-radius: 20px;
+    /* display: none; */
+    width: 0px;
+    margin-top: -130px;
+    margin-left: 10px;
+    transition: width 1s ease-out;
+
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+    width: 60px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #b19191;
+    border-radius: 10px;
+    background-color: #ffc6b2;
+}
+
+.line {
+    background-color: black;
+    height: 3px;
+    width: 30vw;
+    position: absolute;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background-color: #f1ad94;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 35px;
+
+    }
+
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
